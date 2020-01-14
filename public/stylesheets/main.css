@@ -1,0 +1,161 @@
+/* line 2, ../sass/base/_base.scss */
+ul li {
+  list-style: none;
+  color: white;
+}
+/* line 5, ../sass/base/_base.scss */
+ul li:hover {
+  color: red;
+}
+
+/* line 14, ../sass/base/_base.scss */
+.section-padding {
+  padding: 50px;
+}
+
+/* line 23, ../sass/base/_base.scss */
+.button-s {
+  border: 2px solid black;
+  margin: 20px;
+}
+
+/* line 28, ../sass/base/_base.scss */
+.service__heading {
+  margin: 50px;
+}
+
+/* line 1, ../sass/module/_navbar.scss */
+nav ul li a {
+  color: white !important;
+}
+
+/* line 6, ../sass/module/_navbar.scss */
+.color {
+  background-color: #24292E !important;
+}
+
+/* line 1, ../sass/module/_services.scss */
+.services {
+  background-color: #585858;
+}
+
+/* line 1, ../sass/module/_copyright.scss */
+.copyright {
+  padding: 10px 10px;
+  background-color: #000000;
+  color: white;
+}
+
+/* line 1, ../sass/module/_Footer.scss */
+.footer {
+  color: white;
+  background-color: #292929;
+}
+/* line 4, ../sass/module/_Footer.scss */
+.footer ul li a {
+  color: #fff;
+}
+
+/* line 1, ../sass/module/_posts.scss */
+.posts {
+  color: white;
+}
+
+/* line 1, ../sass/module/pages/_about.scss */
+.section-padding {
+  padding: 80px;
+  text-align: center;
+  background-image: url(../images/bg5.jpg);
+}
+
+/* line 1, ../sass/module/pages/_posts.scss */
+.services-services {
+  padding: 10px;
+}
+.orderElement{
+  text-align: right;
+}
+
+th{
+    text-align: center;
+    align-content: center;
+
+}
+
+td{
+    text-align: center;
+}
+.row{
+   position: relative;
+    text-align: left;
+    
+    
+}
+.panel-body{
+    
+    width: 500px;
+    height: 500px;
+}
+
+
+
+#background{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+#loginback{
+  
+  background-size: 100%;
+}
+#registerback{
+  
+  background-size: 100%;
+}
+#searchBack{
+    
+    background-size: 100%;
+}
+#postBack{
+  background-size: 100%;
+}
+#postFormBack{
+  
+  background-size: 100%;
+}
+#postEditBack{
+  background-size: 100%;
+}
+#postDeleteBack{
+  background-size: 100%;
+}
+#reserveBack{
+  background-size: 100%;
+}
+#indexBack{
+  background-size: 100%;
+}
+#title{
+  color:white;
+}
+#logo{
+  height: 60px;
+  width: 150px;
+}
+#addButton{
+    margin-bottom: 20px;
+}
+#date{
+  display: block;
+  margin: 5px;
+}
+div.ng-scope{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+html{
+  height: 100%;
+}

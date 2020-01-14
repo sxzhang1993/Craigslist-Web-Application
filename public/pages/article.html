@@ -1,0 +1,49 @@
+
+    
+
+<div id="postContent">
+    <nav class=" color navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header" >
+                <a class="navbar-brand" href="/#/"><b>Craigslist</b></a>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="/#/">Home</a></li>
+                <li ng-show="post"><a href="/#/posts">post Administration</a></li>
+                <li><a href="/#/search">Search</a></li>
+                <li ng-show="signout"><a href="/#/" ng-click="signOut()">Log Out</a></li>
+                <li><a ng-href={{AccountHref}}>{{LoginName}}</a></li>
+                <li><a href="/#/add-post"><img src="../images/plus.png" style="height: 40px; width: 40px; float: right; position:relative;left:150px; position: relative; bottom:10px;"></a></li>
+            </ul>
+        </div>
+    </nav>
+<section class="section-padding" style="height: 100%; text-align: left;">
+    <div style="height: 100%">
+        <div id="postcat"> <a href="/#/list/{{post.category}}">{{post.category}}</a>&rarr;<a href="/#/list/{{post.category}}/{{post.type}}">{{post.type}}</a></div>
+ <div id="posttitle"> 
+<h1>
+    {{post.title}}
+</h1>
+      <div id="postcontact" style="float: right">Contact Author:<a href="mailto:{{post.user_email}}"><i> {{post.user_email}}</i></a></div>
+    </div>
+    <div id="postdate"  style="border-top: 1px solid black">
+    <p>Date: {{post.posted_time}}</p>
+    </div>
+   <div id="postcontent">
+    <p>{{post.content}}</p>
+       
+    </div>
+        <br>
+    <div id="postimg"><img src="../upload/{{post.image}}" style="height: 300px;width: 240px" alt=""></div>
+       
+       <br>
+    <div id="postbutt" style="height: 95px">
+<input type="button" class="btn btn-primary" value="Save" ng-click="save()"></input>
+    </div>
+    </section>
+</div>
+
+
+
+
+

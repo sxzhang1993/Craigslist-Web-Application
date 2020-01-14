@@ -1,0 +1,80 @@
+<nav class=" color navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/#/"><b>Craigslist</b></a>
+        </div>
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="/#/">Home</a></li>
+            <li ng-show="post"><a href="/#/posts">post Administration</a></li>
+            <li><a href="/#/search">Search</a></li>
+            <li ng-show="signout"><a href="/#/" ng-click="signOut()">Log Out</a></li>
+            <li><a ng-href={{AccountHref}}>{{LoginName}}</a></li>
+            <li><a href="/#/add-post"><img src="../images/plus.png" style="height: 40px; width: 40px; float: right; position:relative;left:150px; position: relative; bottom:10px;"></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section-padding">
+    <div class="container">
+                <h1 class="service__heading service--headingbg top-margin"><b>All the informations on board</b></h1></center>
+            <div class="row">
+                <div class="col-md-4 box" style="position:relative;left:100px;">
+                    <a href="/#/list/community"><h3>Community</h3></a>
+                    <ul>
+                        <li ng-repeat='c in community'>
+                            <a href="/#/list/community/{{c}}">
+                            {{c}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 box" style="position:relative;left:100px;">
+                    <a href="/#/list/forsale"><h3>Goods Sales</h3>
+                    </a>
+                    <ul>
+                        <li ng-repeat='s in forsale'>
+                            <a href="/#/list/forsale/{{s}}">
+                            {{s}}
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="col-md-4 box" style="position:relative;left:100px;">
+                    
+                    <a href="/#/list/jobs"><h3>Jobs Chances</h3>
+                    </a>
+                    <ul> 
+                        <li ng-repeat='j in jobs'>
+                            <a href="/#/list/jobs/{{j}}">
+                            {{j}}
+                            </a>
+                        </li>   
+                    </ul>
+                </div>
+            </div>
+            <div class="services-services">
+                <div class="row">
+                    <div class="col-md-4 box">
+                        <a href="/#/community"><img src="./images/community.jpg" class="img-thumbnail"></a>
+                        <br />
+                        <br />
+                        <p class="paragraph">You can go there to community what you want! In this section, there are 3 subjects: Activities, Artists, Event. Find something interesting and make new friends! </p>
+                    </div>
+                    <div class="col-md-4 box">
+                        <a href="/#/forsale"><img src="./images/forsale.jpg" class="img-thumbnail"></a>
+                        <br />
+                        <br />
+                        <p class="paragraph">You can find information about used or brand new goods here.</p>
+                    </div>
+                    <div class="col-md-4 box">
+                        <a href="/#/jobs"><img src="./images/jobs.jpg" class="img-thumbnail"></a>
+                        <br />
+                        <br />
+                        <p class="paragraph">This is the section regarding job finding. Start your new career here!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   </section>
